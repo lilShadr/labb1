@@ -1,236 +1,328 @@
-/*Container som omsluter info, moti samt more boxarna */
-#mainContainer{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    height: 450px;
-    width: 1550px;
-    align-content: flex-start;
-
-
-    
-}
-
-/*De tre boxarna som utgör main på förstasidan */
-.mainBox{
-    height: 200px;
-    width: 200px;
-    margin: 5px;
-
-    text-align: center;
-
-    box-shadow: 10px 10px 8px darkslategrey;
-    border-radius: 8px;
-}
-
-/*Infoboxen*/
-.infoBox{
-    background-color: #8CE1DC;
-    width: 100%;
-    flex-direction: row;
-
-    padding-left: 10px;   
-
-    font-size: 28px;
-    font-family: 'Kaisei Tokumin', serif;
-
-}
-/*MotivationalQuoteboxen*/
-.motiBox{
-    background-color: #9DDFEC;
-    width: 28.7%;
-    flex-direction: row;
-
-    padding-left: 10px;
-
-    font-family: 'Allison', cursive;
-    font-size: 20px;
-}
-/*Moreboxen*/
-.moreBox{
-    background-color:#C3FFFD;
-    width: 70%;
-    flex-direction: row;
-
-    padding-left: 10px;
-
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 22px;
-    text-align: center;
-}
-
-
-/*Lina*/
-
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-
-    background-image: url(images/bg.png)
-    
-
-  
-  }
-  
-  aside {
-    background-color: #adc2eb;
-    height: 107vh;
-    width: 12%;
-    margin-left: 2.5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-right: 2%;
-
-    box-shadow: 10px 10px 8px darkslategrey;
-    border-radius: 8px;
-    
-    float: left;
-    
-    background: linear-gradient(to bottom right, #0099cc 0%, #99ffcc 100%);
-  }
-  
-  #menu {
-    display: flex;
-    flex-direction: column;
-    font-size: 180%;
-  }
-  
-  nav a {
-    padding-top: 20%;
-    margin-left: 1vw;
-    color: #000000;
-  }
-  
-   nav a:link {
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-  
-    text-decoration: underline;
-  }
-
-
-/*Peter*/
-
+/*Animation for header text*/
 .animation-box {
-    width: 70%;
-    height: 300px;
-    /*background-color: blue; Uncheck to see borders of class*/
-    margin-top: 70px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .animation-container {
-    width: 1000rem;
-    height: 30rem;
-  }
-  
-  @keyframes topFadeOut {
-    0% {
-      position: absolute;
-      top: 10rem;
-      opacity: 0;
-    }
-  
-    75% {
-      position: absolute;
-      top: 25%;
-      opacity: 2;
-    }
-  
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  .first-text {
-      font-size: 2.4rem;
-      position: absolute;
-      text-transform: uppercase;
-         text-align: center;
-         text-shadow: 2px 2px 7px darkslategray;
-         left: 2.5rem;
-         font-weight: 500;
-      top: 30%;
-      opacity: 100;
-      animation-name: topFadeOut;
-      animation-duration: 5s;
-      color: black;
-  }
-  
-  
-/*Peter del 2*/
+	width: 70%;
+	height: 300px;
+	/*background-color: blue; Uncheck to see borders of class*/
+	margin-top: 70px;
+	overflow: hidden;
+	position: relative;
+}
+
+.animation-container {
+	width: 1000rem;
+	height: 30rem;
+}
+
+@keyframes topFadeOut {
+	0% {
+		position: absolute;
+		top: 10rem;
+		opacity: 0;
+	}
+	75% {
+		position: absolute;
+		top: 25%;
+		opacity: 2;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.first-text {
+	position: absolute;
+	width: 900px;
+	font-size: 2.0rem;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 2px 2px 7px darkslategray;
+	/*top: 5rem;*/
+	font-weight: 500;
+	opacity: 100;
+	animation-name: topFadeOut;
+	animation-duration: 5s;
+	color: #ffffffb4;
+}
 
 html {
-    width: 100%;
-  }
-  
-  body {
-    background-image: url(images/bg.png);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-  }
-  main {
-    width: 75%;
-    height: 400px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: 2.5%;
-  
-    background-color: wheat;
-  }
-  
-  /*.flex-container5 {
+	width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	background: linear-gradient(to bottom, #cceeff 0%, #b3ccff 100%);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+
+/*
+main {
+	width: 75%;
+	height: 400px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: 2.5%;
+	background-color: wheat;
+}
+*/
+
+
+/*.flex-container5 {
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
       text-align: center;
   }*/
-  
-  header {
-    background: linear-gradient(to bottom, grey 0%, lightgrey 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95%;
-    color: black;
-    padding: 5px 10px 5px;
-    margin: 15px auto 0px;
-    height: 106px;
-  
-    /* Properties below is optional*/
-    box-shadow: 10px 10px 8px darkslategrey;
-    border-radius: 8px;
-  }
-  
-  h1 {
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 2px 2px 5px darkslategray;
-  }
-  
-  h2 {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .flex-item5 {
-    width: 100px;
-    height: 100px;
-    margin: 3px 10px 0px;
-  }
-  
-  .flex-item6 {
-    width: 100px;
-    height: 100px;
-    visibility: hidden;
-  }
-  /* Optional. This is CSS for header nav links.
+
+
+/***HEADER***/
+
+header {
+	background: linear-gradient(to bottom, #9fbfdf 0%, #6699cc 100%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+	color: black;
+	padding: 5px 10px 5px;
+	margin: 15px auto 0px;
+	height: 106px;
+	/* Properties below is optional*/
+	box-shadow: 10px 10px 8px darkslategrey;
+	border-radius: 8px;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 2px 2px 5px darkslategray;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 15px;
+}
+
+.flex-item5 {
+	width: 100px;
+	height: 100px;
+	margin: 3px 10px 0px;
+}
+
+.flex-item6 {
+	width: 100%;
+	height: 300px;
+	/*background-color: blue;*/
+	margin-top: 70px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+/***MAIN***/
+
+/*Container which surrounds the three main boxes; infoBox, motiBox and moreBox*/
+
+#mainContainer {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+	height: 450px;
+	width: 1550px;
+	align-content: flex-start;
+}
+
+
+/*General properties for the three main boxes*/
+
+.mainBox {
+	height: 200px;
+	width: 200px;
+	margin: 5px;
+	text-align: center;
+	box-shadow: 10px 10px 8px darkslategrey;
+	border-radius: 8px;
+}
+
+
+/*The infobox right under the homescreen image*/
+
+.infoBox {
+	background: linear-gradient(to bottom, #80aaff 0%, #99ddff 100%);
+	width: 100%;
+	flex-direction: row;
+	padding-left: 10px;
+	font-size: 28px;
+	font-family: 'Kaisei Tokumin', serif;
+	color: #ffffffb4;
+}
+
+
+/*The motivationalquote box right above the footer*/
+
+.motiBox {
+	background: linear-gradient(to top, #80aaff 0%, #99ddff 100%);
+	width: 100%;
+	width: 28.7%;
+	flex-direction: row;
+	padding-left: 10px;
+	font-family: 'Allison', cursive;
+	font-size: 20px;
+}
+
+
+/*The "more"box next to the motivationalquote box*/
+
+.moreBox {
+	background: linear-gradient(to top, #80aaff 0%, #99ddff 100%);
+	width: 100%;
+	width: 70%;
+	flex-direction: row;
+	padding-left: 10px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 22px;
+	text-align: center;
+	color: #ffffffb4;
+}
+
+
+/*The main box for omOss*/
+
+.omOssArticleBox {
+	background-color: #7fffd4;
+	background: linear-gradient(to bottom right, #6699cc 0%, #99ddff 100%);
+	width: 100%;
+	height: 128%;
+	font-family: 'Mukta', sans-serif;
+	font-size: 35px;
+	color: #ffffffb4;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+/*The main box for öppetTider*/
+
+.öppetTiderArticleBox {
+	background-color: #7fffd4;
+	background: linear-gradient(to bottom right, #6699cc 0%, #99ddff 100%);
+	width: 100%;
+	height: 65vh;
+	font-family: 'Mukta', sans-serif;
+	font-size: 40px;
+	text-align: start;
+	line-height: 1.4;
+	padding-left: 500px;
+	padding-top: 150px;
+	word-spacing: 30px;
+}
+
+
+/*Odd/even has different colors to clarify*/
+
+li:nth-child(odd) {
+	color: #b5e5b9;
+}
+
+li:nth-child(even) {
+	color: #018783;
+}
+
+
+/*The main box for kontaktaOss*/
+
+.kontaktaOssArticleBox {
+	background-color: #7fffd4;
+	background: linear-gradient(to bottom right, #6699cc 0%, #99ddff 100%);
+	width: 100%;
+	height: 89%;
+	font-family: 'Mukta', sans-serif;
+	font-size: 25px;
+	color: #ffffffb4;
+	line-height: 0.5;
+}
+
+
+/*The main box for bokaTid*/
+
+.bokaTidArticleBox {
+	background-color: #7fffd4;
+	background: linear-gradient(to bottom right, #6699cc 0%, #99ddff 100%);
+	width: 100%;
+	height: 98%;
+	color: #ffffffb4;
+}
+
+
+/*"Boka nu!" button for bokaTid*/
+
+.bokaNuButton {
+	display: flex;
+	padding: 5px;
+	border: 3px solid #6699cc;
+	background-color: #99ddff;
+	height: 100px;
+	width: 200px;
+	font-size: 40px;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
+	align-items: baseline;
+	margin-left: 800px;
+	margin-top: 75px;
+}
+
+
+/*Aside*/
+
+aside {
+	background-color: #adc2eb;
+	height: 107vh;
+	width: 12%;
+	margin-left: 2.5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 2%;
+	box-shadow: 10px 10px 8px darkslategrey;
+	border-radius: 8px;
+	float: left;
+	background: linear-gradient(to bottom right, #80aaff 0%, #99ddff 100%);
+}
+
+#menu {
+	display: flex;
+	flex-direction: column;
+	font-size: 180%;
+}
+
+nav a {
+	padding-top: 20%;
+	margin-left: 1vw;
+	color: #000000;
+}
+
+nav a:link {
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+
+/***FOOTER***/
+
+
+/* Optional. This is CSS for header nav links.
       .nav header {
           color: black;
           list-style-type: none;
@@ -244,119 +336,132 @@ html {
           padding: 10px;
           color:darkslategrey;
         } */
-  
-  /* .fotsub is bold subhead in footer */
-  .fotsub {
-    color: black;
-    font-size: 1em;
-    font-weight: 700;
-    margin: auto;
-    text-align: left;
-  }
-  /* ul is list in footer */
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px 10px;
-  }
-  
-  footer {
-    background: linear-gradient(to top, grey 0%, lightgrey 100%);
-    justify-content: space-evenly;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 0.7em;
-    height: 100px;
-    width: 95%;
-    padding: 5px 20px;
-    margin: 10px auto;
-    line-height: 1.4;
-    text-align: center;
-    /* Properties below is optional*/
-    box-shadow: 10px 10px 8px darkslategrey;
-    border-radius: 8px;
-  }
-  
-  /* Here are flex for colums in footer. */
-  * {
-    box-sizing: border-box;
-  }
-  
-  .flex-container1 {
-    justify-content: space-evenly;
-  
-    margin: 5px;
-    display: flex;
-  }
-  
-  .flex-container2 {
-    justify-content: space-evenly;
-  
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .flex-container3 {
-    justify-content: space-evenly;
-  
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .flex-container4 {
-    justify-content: space-evenly;
-  
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .flex-item {
-    text-align: left;
-  
-    width: 200px;
-    height: 80px;
-    margin: 3px;
-  }
-  
-  /* This css for links in footer*/
-  
-  /* unvisited link */
-  a:link {
-    color: black;
-    text-decoration: none;
-    text-shadow: 2px 2px 5px darkslategray;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: rgb(68, 0, 255);
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: rgb(68, 0, 255);
-    padding-left: 7px;
-    text-shadow: 2px 2px 5px darkslategray;
-  }
-  
-  /* selected link */
-  a:active {
-    color: rgb(68, 0, 255);
-  }
-  
-.mainImage{
-    width: 81%;
 
-    box-shadow: 10px 10px 8px darkslategrey;
-    border-radius: 8px;
-    margin-top: 37px;
+
+/* .fotsub is bold subhead in footer */
+
+.fotsub {
+	color: black;
+	font-size: 1em;
+	font-weight: 700;
+	margin: auto;
+	text-align: left;
 }
 
 
-#99e6ff
+/* ul is list in footer */
 
-#33ccff
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px 10px;
+}
+
+footer {
+	background: linear-gradient(to bottom, #9fbfdf 0%, #6699cc 100%);
+	justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.7em;
+	height: 100px;
+	width: 95%;
+	padding: 5px 20px;
+	margin: 10px auto;
+	line-height: 1.4;
+	text-align: center;
+	/* Properties below is optional*/
+	box-shadow: 10px 10px 8px darkslategrey;
+	border-radius: 8px;
+}
+
+
+/* Here are flex for colums in footer. */
+
+* {
+	box-sizing: border-box;
+}
+
+.flex-container1 {
+	justify-content: space-evenly;
+	margin: 5px;
+	display: flex;
+}
+
+.flex-container2 {
+	justify-content: space-evenly;
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-container3 {
+	justify-content: space-evenly;
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-container4 {
+	justify-content: space-evenly;
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-item {
+	text-align: left;
+	width: 200px;
+	height: 80px;
+	margin: 3px;
+}
+
+
+/* This css for links in footer*/
+
+
+/* unvisited link */
+
+a:link {
+	color: black;
+	text-decoration: none;
+	text-shadow: 2px 2px 5px darkslategray;
+}
+
+
+/* visited link */
+
+a:visited {
+	color: rgb(68, 0, 255);
+}
+
+
+/* mouse over link */
+
+a:hover {
+	color: rgb(68, 0, 255);
+	padding-left: 7px;
+	text-shadow: 2px 2px 5px darkslategray;
+}
+
+
+/* selected link */
+
+a:active {
+	color: rgb(68, 0, 255);
+}
+
+.mainImage {
+	width: 81%;
+	box-shadow: 10px 10px 8px darkslategrey;
+	border-radius: 8px;
+	margin-top: 40px;
+}
+
+#mainImageNoBorders {
+	box-shadow: none;
+	height: 40vh;
+}
+
+.footerPng {
+	height: 70px;
+}
